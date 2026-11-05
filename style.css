@@ -1,0 +1,91 @@
+body {
+    color: darkgrey;
+}
+
+h2 {
+    color:blueviolet;
+}
+
+#recipe-title {
+    color: black;
+    font-size: 40px;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.intro {
+    font-size: 20px;
+    color: coral;
+}
+
+.block {
+    background-color: white;
+    width: 700px;
+    box-shadow: 0 2px 8px gray;
+}
+
+body {
+    background-color: lightgray;
+}
+
+#main-image {
+    width: 400px;
+    box-shadow: 1 5px 6px gray;
+}
+
+#info-table {
+    width: 100%;
+}
+
+.side-image {
+    width: 200px;
+    height: 200px;
+}
+
+#nav a:hover {
+    color: darkred;
+}
+
+.block :hover {
+    box-shadow: 0 2px 8px gray;
+}
+
+.ingredients-list li:first-child{
+    color: brown;
+}
+
+.steps-list li:last-child{
+    color: coral;
+}
+
+tbody tr :hover {
+    color: black;
+}
+
+.ingredients-list li::before {
+    content: "$ ";
+    color: green;
+}
+
+h2::after {
+    content: " ^";
+    color: blue;
+}
+
+#page-footer p::before {
+    content: "©";
+}
+
+.container {
+    width: 900px;
+}
+
+/*
+תשובה א: עדיף לכתוב סלקטור אחד של קלאס
+כי אני רוצה לכולם את אותה מטרה בדיוק - אותו הצבע לכולם.
+
+תשובה ב: התמונה התעוותה
+כדי למנוע הייתי מגדירה רק רוחב ונותנת התאמה אוטומטית לגובה.
+*/
