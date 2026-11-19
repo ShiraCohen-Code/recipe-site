@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 1rem;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    > label {
+        font-weight: bold;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+input:not([type="checkbox"], [type="radio"]) , select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+fieldset {
+        border: 1px solid #bbb;
+        border-radius: 10px;
+}  
+
+textarea:focus,
+select:focus,
+input:focus {
+    border-color: #2e5597;
+    outline: none;
+    /* box-shadow: 0 0 5px rgba(46, 85, 151, 0.4); */
+}
+
+input[type="radio"], input[type="checkbox"] {
+    accent-color: #2e5597;
+}
+
+button {
+    background-color: #2e5597;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 1rem;
+    min-height: 44px;
+    cursor: pointer;
+    width: 100%;
+    align-self: flex-end;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+button:hover {
+    background-color: #061e47;
+}
+
+/* בעיות שמצאתי כאשר הקטנתי את המסך */
+/* הטופס רחב יותר מהמסך*/
+/* אין מקום לתוכן*/
+
+@media (width >= 700px) {
+    form {
+        padding: 2rem;
+    }
+    .row {
+        flex-direction: row;
+    }
+    .row .field {
+        flex: 1;
+    }
+    button {
+        width: auto; align-self: center;
+        /* השדות "קופצים" לשורה אחת ברוחב 700 */
+    }
+}
+
+
+/* תשובה א */
+/* id - מזהה יחודי לכל שדה */
+/* name - קובע לאיזו קבוצה הוא שייך ואיזה שם יישלח עם הנתון בטופס. */
+/* לכל כתפורי הרדיו יש את אותו שם כדי לאפשר לבחור רק אפשרות אחת */
+
+/* תשובה ב */
+/* כתבנו את העיצוב על מסך קטן קודם כי אם היינו כותבות 
+את העיצוב הרגיל ראשון הוא היה דורס את העצוב של המסך הקטן */
+
+/* תשובה ג */
+/* נוספו כל הפרטים שהזנתי בטופס */
+/* name - מגדיר את שם הפרמטר שבו הנתון נשלח ומופיע בשורת הכתובת לאחר שליחת הטופס */
