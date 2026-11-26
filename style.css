@@ -1,5 +1,5 @@
 body {
-    color: darkgrey;
+    color: grey;
 }
 
 h2 {
@@ -7,7 +7,7 @@ h2 {
 }
 
 #recipe-title {
-    color: black;
+    color: brown;
     font-size: 40px;
 }
 
@@ -32,7 +32,7 @@ body {
 
 #main-image {
     width: 400px;
-    box-shadow: 1 5px 6px gray;
+    box-shadow: 0 5px 6px gray;
 }
 
 #info-table {
@@ -48,8 +48,8 @@ body {
     color: darkred;
 }
 
-.block :hover {
-    box-shadow: 0 2px 8px gray;
+.block:hover {
+    box-shadow: 0 8px 20px gray;
 }
 
 .ingredients-list li:first-child{
@@ -60,7 +60,7 @@ body {
     color: coral;
 }
 
-tbody tr :hover {
+tbody tr:hover {
     color: black;
 }
 
